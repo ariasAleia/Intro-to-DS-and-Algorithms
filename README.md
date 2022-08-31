@@ -35,3 +35,55 @@ Like everything in life, it is all a matter of balance. We must think about algo
 
 A tradeoff: a balancing of two qualities both of which are desired but that may not have a totally compatible existence.
 
+## Big O notation
+
+Yes... we love coding and most of the time we do it alone with our pencil and sheet of paper, however, we are social beings and the need to communicate the way we are doing things. In this case, we want to be able to communicate how good or bad the behavior of an algorithm is: its complexity. It's also important for us to know how good an algorithm developed by sb else is. That means, we all need a common language and that language in this case is the Big O Notation. 
+
+We will basically describe the complexity of an algorithm depending on the amount of data that we get as input. That amount of data is n.
+
+So we have...
+* $O(n)$
+* $O(n^2)$
+* $O(log (n))$
+
+We don't necessarily have to check every single calculation that is performed, we can approximate. That means that $O(2n +1)$ would be the same as $O(n)$.
+
+### Let's practice with an example
+
+```python
+"""input manatees: a list of "manatees", where one manatee is represented by a dictionary
+a single manatee has properties like "name", "age", et cetera
+n = the number of elements in "manatees"
+m = the number of properties per "manatee" (i.e. the number of keys in a manatee dictionary)"""
+
+def example1(manatees):
+    for manatee in manatees:
+        print manatee['name']
+
+def example2(manatees):
+    print manatees[0]['name']
+    print manatees[0]['age']
+
+def example3(manatees):
+    for manatee in manatees:
+        for manatee_property in manatee:
+            print manatee_property, ": ", manatee[manatee_property]
+
+def example4(manatees):
+    oldest_manatee = "No manatees here!"
+    for manatee1 in manatees:
+        for manatee2 in manatees:
+            if manatee1['age'] < manatee2['age']:
+                oldest_manatee = manatee2['name']
+            else:
+                oldest_manatee = manatee1['name']
+    print oldest_manatee
+```
+
+Our answers:
+
+![](images/ans_O_notation.png)  
+
+The hipermega great result :):
+
+![](images/exercise_O_notation.png)  
