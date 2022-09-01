@@ -115,7 +115,10 @@ Knowledge is not power. Knowledge is potential power. We gotta do sth with that 
 
 We just implemented the functions to insert, delete and get the value of an specific node in the linked list. Did you read well? We implemented the functions by ourselves! (See the source code [here](scripts/linked_list.py)) And... it worked! 
 
-![](images/test_functions_linked_list.png)  
+
+<p align="center">
+<img src= "images/test_functions_linked_list.png" alt="Euler" title="Euler" width="550px" height="250px">
+</p>
 
 
 **Lesson 1:** A node is not the same as the value of the node! Take care Aleja.
@@ -147,7 +150,10 @@ It's is interesting how easy it is to have access to the head of a list and ther
 
 And yep! Feedback:
 
-![](images/stack_exercise.png)  
+<p align="center">
+<img src= "images/stack_exercise.png" alt="Euler" title="Euler" width="550px" height="250px">
+</p>
+
 
 **Lesson 2:** If your function returns a value x but it doesn't do it directly but by calling another function, you still have to use the word return!
 
@@ -181,4 +187,8 @@ Now, let's implement the functions dequeue and enqueue. It's pretty easy if we d
 
 And again feedback. Yes... I dooo like feedback. Sensor mode on :P
 
-![](images/exercise_queue.png)  
+
+<p align="center">
+<img src= "images/exercise_queue.png" alt="Euler" title="Euler" width="550px" height="250px">
+</p>
+
