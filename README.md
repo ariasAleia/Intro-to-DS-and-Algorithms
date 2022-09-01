@@ -116,3 +116,69 @@ Knowledge is not power. Knowledge is potential power. We gotta do sth with that 
 We just implemented the functions to insert, delete and get the value of an specific node in the linked list. Did you read well? We implemented the functions by ourselves! (See the source code [here](scripts/linked_list.py)) And... it worked! 
 
 ![](images/test_functions_linked_list.png)  
+
+
+**Lesson 1:** A node is not the same as the value of the node! Take care Aleja.
+
+
+**Extra important info:** When we talk in terms of list we use the terms *insert*, when we add an element in a specific position, *append*, when we add an element at the end, *delete*, when we, forgive the redundancy, delete an element. But with stacks it's different, we push or pop.
+
+Keep reading to know more.
+
+
+## Stacks: L.I.F.O
+
+Yep... Last in, first out. That's it. Got it? Ehmmm... Ok, let's explain a little bit more. Stacks is a type of data structure where we pay attention to the last element we add because every element that we add goes at the end of the list. 
+
+Adding an element is called **push** and removing an element is called **pop**. 
+
+
+**Really important:** We can only push and pop the last element!
+
+**Extra important info:** When we pop, we also return (usually, almost always) the last element. We don't only delete it but we also return it. 
+
+**Extra extra info:** The first element is called the *head* or the *top*. We push to the top or we pop the top.
+
+### Practicing...
+
+You can find methods to pop and push in this [file](scripts/stack.py)
+
+It's is interesting how easy it is to have access to the head of a list and therefore to implement a stack.
+
+And yep! Feedback:
+
+![](images/stack_exercise.png)  
+
+**Lesson 2:** If your function returns a value x but it doesn't do it directly but by calling another function, you still have to use the word return!
+
+```python
+def func1(self):
+    return self.func2()
+```
+
+## Queues... 
+
+Queue, dequeue, enqueue, peek, dequeue and priority queue... Ok. Maaany terms. Let's begin slowly. 
+
+What is a queue? Well.. A queue is a data structure where we add an element at the end of the list. Yep, the opposite to a stack. That means **F.I.F.O: First in, First out**.
+The first element is called *Head* and the last element is called *Tail*.
+
+When we **dequeue**, we take the first element that was added and we delete it. We delete the head.
+
+When we **enqueue**, we add an element at the end of the queue. There is now a new tail.
+
+We can also **peek**, that means we look at the value of the head.
+
+There are two famous queues:
+
+* Dequeue: We can enqueue and dequeue.
+* **Priority queue:** Each of the elements has a value but also a **priority**. When we dequeue, we delete the element with the highest priority. If all of them have the same priority, then we delete according to F.I.F.O, therefore we would delete the head.
+
+
+## Practicing: 
+
+Now, let's implement the functions dequeue and enqueue. It's pretty easy if we do it using a python list and the function append (that is like the enqueue) and the function pop (specifying the first element it would be like dequeue). The source code can be found [here](scripts/queue.py).
+
+And again feedback. Yes... I dooo like feedback. Sensor mode on :P
+
+![](images/exercise_queue.png)  
