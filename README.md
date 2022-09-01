@@ -42,9 +42,10 @@ Yes... we love coding and most of the time we do it alone with our pencil and sh
 We will basically describe the complexity of an algorithm depending on the amount of data that we get as input. That amount of data is n.
 
 So we have...
-* $O(n)$
+* $O(n)$ We pronounce it as: Big O **of** n
 * $O(n^2)$
 * $O(log (n))$
+* $O(k)$ with $k$ being a constant. That here is great: constant time
 
 We don't necessarily have to check every single calculation that is performed, we can approximate. That means that $O(2n +1)$ would be the same as $O(n)$.
 
@@ -87,3 +88,31 @@ Our answers:
 The hipermega great result :):
 
 ![](images/exercise_O_notation.png)  
+
+## Collections
+
+Well... A collection is basically a group of things. They can be different kind of things and they don't have an order. A collection of friends, of books, of thoughts... or a collection of friends and books.
+
+In Python we have different collections that can have different properties. For example lists, which do have an order.
+
+### Lists
+
+They do have an order. A really famous type of lists are arrays. Arrays have an index for each one of the elements. Some problems that may arise with arrays are related to the high complexity that it takes to delete or add elements to them.
+
+## Linked list
+
+Here we don't have indexes in comparison to an array. We have links. Each element knows who is next but they don't really know where they are. Yes... we don't have as much information as with those indexes but it has some advantages. We can do operations such as delete and add elements in an easier and faster way. That means... A lower complexity :)
+
+
+In a linked list we store a reference to the next element. In hardware level we are saving the memory location of the next element in the list so that if we need to do an insertion or deletion of an element in the list it's just a matter of moving the references and it occurs in constant time.
+
+There is also sth called **doubly linked list**. Do you have an idea of what this could be? Yes! We don't only save the reference of the next item but also the reference of the previous one!
+
+
+### Practicing with linked lists
+
+Knowledge is not power. Knowledge is potential power. We gotta do sth with that knowledge to unleash its power and that's exactly why we need to practice.
+
+We just implemented the functions to insert, delete and get the value of an specific node in the linked list. Did you read well? We implemented the functions by ourselves! (See the source code [here](scripts/linked_list.py)) And... it worked! 
+
+![](images/test_functions_linked_list.png)  
