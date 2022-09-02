@@ -162,6 +162,9 @@ def func1(self):
     return self.func2()
 ```
 
+Hey! Sth important. **If we do the job, we do it properly.** Check line 37 of the [stack file](scripts/stack.py). Actually it would not be strictly necessary to set the value of the next node of the deleted node to None, but... it's better. Because imagine if we return the deleted head and then for any reason we check the next node of that deleted head (that we just deleted) and then we would point to the current new head. That could cause seeerious problems so: If we do sth, we do it clean. 
+
+
 ## Queues... 
 
 Queue, dequeue, enqueue, peek, dequeue and priority queue... Ok. Maaany terms. Let's begin slowly. 
