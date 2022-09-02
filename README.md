@@ -195,3 +195,16 @@ And again feedback. Yes... I dooo like feedback. Sensor mode on :P
 <img src= "images/exercise_queue.png" alt="Euler" title="Euler" width="550px" height="250px">
 </p>
 
+
+# Algorithms
+
+A great word. Is it just me the one who gets exciting just by hearing this word? Well... I really like this word. But what does it mean?
+
+An algorithm is a trick to do magic. It's sensational but at the same time so simple that the magic relies on the simplicity. Basic structures with a great mind and you have real magic.
+
+<p style="text-align:right"><b> "It's not the tool. It's what you do with the tool what determines its geniality</b>"<br>Aleia Arias :)</p>
+
+Let's begin with some basic, simple and fascinating algorithms...
+
+## Binary Search
+
