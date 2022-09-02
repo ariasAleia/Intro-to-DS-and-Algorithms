@@ -34,6 +34,7 @@ class LinkedList(object):
         current = self.head
         if current:
             self.head = self.head.next
+            current.next = None
         return current
 
     def print_list(self):
