@@ -232,3 +232,12 @@ Taraaaaaaaaaaaaaaaan
 
 ![](images/binary_search_result.png)  
 
+## Recursion
+
+The topic. A big one. What are the ingredients of this delicious recipe? Let's take a peek:
+
+* Call the function in the function: That's what makes recursion, forgive the redundancy, recursion. The function calls itself.
+* Base case: There must be a base case that stops the recursion. This is like the exit condition of a while loop.
+* Modify the input of the function: Every time we call the function, the input must be modified.
+
+Take care! We can fall into sth called... chan chan chaaaan **Infinite recursion.** That means that we call the function for ever. That could happen if the condition of the base case is never met or if we don't change the input of the function every time we call it.
