@@ -241,3 +241,44 @@ The topic. A big one. What are the ingredients of this delicious recipe? Let's t
 * Modify the input of the function: Every time we call the function, the input must be modified.
 
 Take care! We can fall into sth called... chan chan chaaaan **Infinite recursion.** That means that we call the function for ever. That could happen if the condition of the base case is never met or if we don't change the input of the function every time we call it.
+
+
+### Practicing...
+
+Yes, I know. Sometimes it is difficult to see the way we can implement a recursive function to solve a problem but take a deep breath and try to understand with pencil and paper what you are doing and see how the pattern can emerge and call the function again.
+
+In this case, we will do it with the famous fibonacci sequence: 0 1 1 2 3 5 8 13 21 34...
+
+And we did it. Yes... We had already seen the answer before and it was not that original but ok, that's the way we also learn: from others. Anyway here [my implementation](scripts/fibonacci.py).
+
+But... Do you see sth?
+
+The code could be shorter if we took this here:
+
+```python
+def get_fib(position):
+    if position == 0:
+        return 0
+    elif position == 1:
+        return 1
+    else:
+        return get_fib(position - 1) + get_fib(position - 2)
+```
+
+And turned it into:
+
+```python
+def get_fib(position):
+    if position == 0 or position == 1:
+        return position
+    else:
+        return get_fib(position - 1) + get_fib(position - 2)
+```
+
+Same result but shorter.
+
+**Lesson 3:** Sometimes the code can be shorter. Just look for the pattern.
+
+But anyway the first implementation also works:
+
+![](images/fibonacci_answer.png)  
