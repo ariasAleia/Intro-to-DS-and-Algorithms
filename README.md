@@ -282,3 +282,16 @@ Same result but shorter.
 But anyway the first implementation also works:
 
 ![](images/fibonacci_answer.png)  
+
+
+## Sorting algorithms
+
+But it's just sorting. Yes... Just sorting. This "just" thing is what moves many things in this world. So... Please respect! Hehe
+
+Sorting. Yep. We want to sort things. There is the naive solution: we compare each element with each other. Takes a long time... That's why it is the *naive solution* but anyway is better than nothing. Remember: Be patient and improve but be patient and find patterns.
+
+There are different types of sorting algorithms but one distinction is that some of them are in place, they do not need to create another list to sort the elements, and some are not in place, we do need to have another list (it could be a copy) to sort the elements.
+
+Let's begin with a naive but tender sorting algorithm
+
+### Bubble sort
