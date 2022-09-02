@@ -198,7 +198,7 @@ And again feedback. Yes... I dooo like feedback. Sensor mode on :P
 
 # Algorithms
 
-A great word. Is it just me the one who gets exciting just by hearing this word? Well... I really like this word. But what does it mean?
+A great word. Is it just me the one who gets excited just by hearing this word? Well... I really like this word. But what does it mean?
 
 An algorithm is a trick to do magic. It's sensational but at the same time so simple that the magic relies on the simplicity. Basic structures with a great mind and you have real magic.
 
@@ -207,4 +207,28 @@ An algorithm is a trick to do magic. It's sensational but at the same time so si
 Let's begin with some basic, simple and fascinating algorithms...
 
 ## Binary Search
+
+If we could summarize this algorithm in a sentence, we should say: If we organize, everything can be easier.
+
+If we want to find if a number is in an array, we do it checking number by number but that would be of complexity... Guess? Yep! $O(n)$, linear, and that's not so good. We can improve that for sure. How?
+
+Let's begin by ordering the numbers from lowest to highest in a list. Done? Ok... And now let's see take the element of the middle in the list and compare it with our number. Is our number greater or smaller? If it's smaller, we already know that the number must be, if it is, in the first half of the list. On the other hand, if our number is greater, then we have to look in the second half of the list. And then repeat the same! 
+
+Which complexity (or efficiency) would we have now? We divide the list by two, and divide again, and again and again... Do you see the pattern? Yep! $O(log_2(n))$
+
+In Ds when we write log, we already mean $log_2$ so we actually could omit that and just say that the complexity is $O(log(n))$. Waaaay faster than linear complexity.
+
+Beautiful, isn't it? Yes...
+
+I told you: Algorithms :)
+
+
+### Practicing
+
+
+Ok, ok. Cute and all but if we just take input and do not generate output then we are not really doing something. So! Here it goes. Our [own implementation](scripts/binary_search.py) of binary search :D
+
+Taraaaaaaaaaaaaaaaan
+
+![](images/binary_search_result.png)  
 
