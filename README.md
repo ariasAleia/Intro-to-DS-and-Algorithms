@@ -328,7 +328,9 @@ And we did it right. Yes...
 
 But it was kinda easy (the Aleja of the 20 minutes ago would say that no but now that we understand it, it's easy... (Yes... Understand! One of my favorite verbs)) So! We do want to implement it by ourselves! So...
 
-Let's do it!
+Let's do it! But first sth more! **Bubble sort has a complexity of $O(n^2)$** because we do n(n-1) and approximations and all that! And in terms of space complexity: it's constant. We don't need to create another list to sort the elements. It's an in place sorting algorithm.
+
+
 
 
 
