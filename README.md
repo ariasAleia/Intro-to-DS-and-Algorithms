@@ -315,5 +315,22 @@ And do you understand now why this algorithm is called bubble sort? Yes. Nop? Ok
 Bubble (going up) or Sinking (going down). As everything in life, just a matter of perspective.
 
 
+### Practicing!
+
+And now time to practice. Yes... I was thinking exactly the same as you. I thought we were going to implement bubble sort but apparently we don't have to. We just had to solve a question:
+
+
+![](images/question_bubble_sort.png)  
+
+And we did it right. Yes...
+
+![](images/answer_bubble_sort.png)  
+
+But it was kinda easy (the Aleja of the 20 minutes ago would say that no but now that we understand it, it's easy... (Yes... Understand! One of my favorite verbs)) So! We do want to implement it by ourselves! So...
+
+Let's do it!
+
+
+
 
 
