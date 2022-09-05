@@ -23,7 +23,7 @@ def bubble_sort(list):
         index = 0    
 
 def main():
-    f = [9, 3, 8, 5, 2, 1, 0]
+    f = [9, -2 , 14, 67, 3, 8, 5, 2, 1, 0]
     bubble_sort(f)
     print(f)
 
