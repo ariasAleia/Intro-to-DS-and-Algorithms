@@ -295,3 +295,25 @@ There are different types of sorting algorithms but one distinction is that some
 Let's begin with a naive but tender sorting algorithm
 
 ### Bubble sort
+
+Ok... This is a really nice algorithm. Yes, some people say it is naive but I think it has its science too. We will compare the first element with the second element, if the first one is greater than the second one we will swap their values. 
+
+Now... and here comes the interesting (and somehow tricky part that didn't quite fit in my brain at first) we compare the **current** second element with the third element and the same, if the second one is greater than the third one then we will swap them. And after that we take the third and fourth **current!!!** elements and so forth. After going through the whole list (that means after the first iteration) we will have the greatest element at the top (being the top the end of the list).
+
+And when that happens we will begin again from the current first element comparing to with the current second element. But wait! We don't have to do exactly the same thing til the end of the list because we already know that the last element is the biggest one so that we don't have to compare with it anymore. A comparison less! Great. And after this second iteration, we don't have to compare with the last two elements and so on...
+
+Yep, I know. It sounds a little bit confusing but I am sure that this gif will make everything clearer :D
+
+<p align="center">
+<img src= "images/Bubble-sort-example-300px.gif" alt="Bubble sort" title="Bubble sort" width="550px" height="250px">
+</p>
+
+More info in this [wikipedia link](https://en.wikipedia.org/wiki/Bubble_sort) (Yes, sometimes (in fact many times) wikipedia is a good source of information. Not always reliable but it's worth seeing).
+
+And do you understand now why this algorithm is called bubble sort? Yes. Nop? Ok haha no problem. It's called like that because with each iteration the greatest value goes to the top. It's also called sinking sort because we can think that the small elements fall into the bottom of the list (being the bottom the first element of the list).
+
+Bubble (going up) or Sinking (going down). As everything in life, just a matter of perspective.
+
+
+
+
