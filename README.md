@@ -334,7 +334,22 @@ Let's do it! But first sth more! **Bubble sort has a complexity of $O(n^2)$** be
 And we did it! Taraaaaaaaaaaaaaaan [Bubble sort :)](scripts/bubble_sort.py)
 
 
+## Merge Sort
 
+Yes... Bubble sort works but it is slow. We can do better. Here comes merge sort. We follow the principle of *divide and conquer*. We will organize little by little. We divide the array in portions and we organize those. We divide it in portions of two and then in four and then... and so on til we have the whole array organized. Those divisions beginning by tow and then being joined gives as the complexity $log(n)$ but everytime we have to do $n$ comparisons so... the total time complexity is $O(nlog(n))$
+
+
+Here a nice gif from [wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
+
+![](images/Merge-sort-example-300px.gif) 
+### Practicing
+
+Just a short one to check if we understood the concept.
+
+Question:
+![](images/question_merge_sort.png)  
+Answer:
+![](images/answer_merge_sort.png)  
 
 
 
