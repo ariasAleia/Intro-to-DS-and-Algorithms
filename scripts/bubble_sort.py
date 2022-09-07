@@ -1,14 +1,14 @@
 #Bubble sort
 #My own implementation :)
 
-def swap_elements(list, x, y):
+def swap_elements(input_list, x, y):
     """
     Swaps the value of the element x and element y
     using no more variables! Just a hack I like :)
     """
-    list[x] = list[x] - list[y]
-    list[y] = list[x] + list[y]
-    list[x] = list[y] - list[x]
+    input_list[x] = input_list[x] - input_list[y]
+    input_list[y] = input_list[x] + input_list[y]
+    input_list[x] = input_list[y] - input_list[x]
 
 def bubble_sort(list):
     index = 0
