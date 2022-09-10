@@ -341,7 +341,9 @@ Yes... Bubble sort works but it is slow. We can do better. Here comes merge sort
 
 Here a nice gif from [wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 
-![](images/Merge-sort-example-300px.gif) 
+![](images/Merge-sort-example-300px.gif)
+
+
 ### Practicing
 
 Just a short one to check if we understood the concept.
@@ -350,6 +352,20 @@ Question:
 ![](images/question_merge_sort.png)  
 Answer:
 ![](images/answer_merge_sort.png)  
+
+
+## Quick Sort
+
+Yes. Quick? Well, it depends. But how does it work?
+
+Let's take a pivot and begin to sort all the elements :D How... Well, the ones that are smaller go to the left, the ones that are greater go to the right. 
+
+In the worst case the complexity is equal to $O(n^2)$ like in bubble sort. It occurs when the pivot is the greatest or the smallest element chosen. In the best case, it is $O(nlog(n))$ like in merge sort. 
+
+Ok... But now let's go to the implementation!
+
+
+
 
 
 
