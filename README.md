@@ -362,7 +362,7 @@ Let's take a pivot and begin to sort all the elements :D How... Well, the ones t
 
 In the worst case the complexity is equal to $O(n^2)$ like in bubble sort. It occurs when the pivot is the greatest or the smallest element chosen. In the best case, it is $O(nlog(n))$ like in merge sort. 
 
-Ok... But now let's go to the implementation!
+Ok... But now let's go to the [implementation](scripts/quick_sort.py)!
 
 
 
