@@ -23,7 +23,9 @@ def sort_letters(string):
         
 
 def main():
-    print(sort_letters("2340Sorting1234"))
+    print(type("i"))
+    #print(sort_letters("2340Sorting1234"))
+    print(all(['*',2,2]))
     
 if __name__ == '__main__':
     main()

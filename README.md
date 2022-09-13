@@ -349,8 +349,11 @@ Here a nice gif from [wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 Just a short one to check if we understood the concept.
 
 Question:
+
 ![](images/question_merge_sort.png)  
+
 Answer:
+
 ![](images/answer_merge_sort.png)  
 
 
@@ -364,6 +367,69 @@ In the worst case the complexity is equal to $O(n^2)$ like in bubble sort. It oc
 
 Ok... But now let's go to the [implementation](scripts/quick_sort.py)!
 
+
+## Next stage: Maps. a.k.a Dictionaries
+
+We have a key and with that key we have access to the respective value.
+
+There is also sth called a set. **A set** is a collection of elements with no order and where the elements are not repeated
+
+
+### Hash functions
+
+Let's imagine we have a value. We want to store the value in a list. We store it somewhere. After that somebody comes and says that wants to get the value from the array. We don't remember where we stored it so we have to search for the item. It's a long process and we want all (as always) to be fast.
+
+There must be a better method, we think. And yes, there is one: hash tables.
+
+With hash tables, every time that we want to store a value we choose the index of the list where it will be saved depending on the value itself. For doing that we use a **hash function**.
+
+The idea is that each value produces an unique hash value, using the hash function. However, sometimes two different values produce the same hash value. That is called a **collision**. 
+
+There are many ways to solve a collision. We could look for the next empty space and then store the value there if a collision occurs. Or... We could also have a list with linked lists. That means that if we have a collision, the items will be added to the linked list found in the position that the has value indicates. In this last approach those lists are called *buckets*. 
+
+Other thing that is super important is that we should not be able to revert the process. That means, we can have a value and get always the same hash value but we shouldn't be able to get the value if we have its hash value. 
+
+***The main idea is to have a constant look up time***
+
+We want to avoid iterating through a list.
+
+#### Load factor
+
+The load factor allows us to know how full our list will be. The more entries we have, the higher the load factor. The fewer buckets we have, the lower the load factor. 
+
+$$\text{Load factor} = \frac{\text{Number of entries}}{\text{Number of Buckets}}$$
+
+If instead of buckets we have just elements in the list then that would be a bucket, a list, of just one element.
+
+
+If we have a really looooong list and we just have some entries then the load factor will be really low. That is good in terms of avoiding collisions but it would require a lot of memory. It's all a trade-off.
+
+### Hash Maps...
+
+So.. A hash map is basically a map, and we already know that a map is a set where the elements are not repeated, where we store the value and its corresponding hash value.
+
+A Python dictionary is a hash map.
+
+
+The clue here is to create interesting hash functions that avoid collisions but also make a good usage of memory.
+
+[Here](scripts/hash_table.py) you can find a simple implementation of a hash map using a hash function that takes the ASCII of the first two characters of a string.
+
+![](images/hash_map_exercise.png)  
+
+## Trees
+
+Trees are composed by nodes. Trees must be connected, that means, that from the root node we must be able to reach all the other nodes.
+
+Root node? Yep. The node that doesn't have parent. Parent? Yes, the node that is before another node. So.. if we have parents, do we also have children? Yep, the nodes that come after another node. And the nodes can be parents and children at the same time? Yes. They can. And are there nodes that do not have children? Yep. They are called leaves. 
+
+What else must be accomplished in order to have a tree? Well, there must not be cycles. Cycles is that you have a path and you can come back to the same node through a path... Ok!
+
+I think I want to practice. But wait! Sth more: Edges are the connections between nodes.
+
+Level: The amount of edges in the largest path + 1
+Depth: The number of connections from one node to the root
+Height: The number of connections from one node to the furthest leaf
 
 
 
